@@ -43,11 +43,11 @@ const TAB_DATA = [
         </li>
         <li>
           Sales Manager -{" "}
-          <span className="font-bold underline">Ltd "Citrus"</span>
+          <span className="font-bold underline">Ltd Citrus</span>
         </li>
         <li>
           Director Assistant -{" "}
-          <span className="font-bold underline">Ltd "ALLO"</span>
+          <span className="font-bold underline">Ltd ALLO</span>
         </li>
       </ul>
     ),

@@ -35,7 +35,7 @@ const HeroSection = () => {
                 </h1>
                 <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6'>
                 Hi everyone ✌🏼
-                My name is Oleg and I'm looking for a job. I love to push myself and I'm very goal oriented. 
+                My name is Oleg and I`m looking for a job. I love to push myself and I`m very goal oriented. 
                 Also, I love learning and creating new processes for construction.
                 </p>
                 <div>
