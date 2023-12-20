@@ -9,7 +9,7 @@ const ProjectsData = [
         id: 1,
         title: "Project 1",
         description: "Project 1 description",
-        image: "/images/Screenshot_92.png",
+        image: "/images/logo.png",
         tag: ["All", "Web"],
         gitURL: "/",
         previewURL: "/"
@@ -18,7 +18,7 @@ const ProjectsData = [
         id: 2,
         title: "Project 2",
         description: "Project 2 description",
-        image: "/images/Screenshot_92.png",
+        image: "/images/logo.png",
         tag: ["All", "Web"],
         gitURL: "/",
         previewURL: "/"
@@ -27,7 +27,7 @@ const ProjectsData = [
         id: 3,
         title: "Project 3",
         description: "Project 3 description",
-        image: "/images/Screenshot_92.png",
+        image: "/images/logo.png",
         tag: ["All", "Web"],
         gitURL: "/",
         previewURL: "/"
@@ -36,7 +36,7 @@ const ProjectsData = [
         id: 4,
         title: "Project 4",
         description: "Project 4 description",
-        image: "/images/Screenshot_92.png",
+        image: "/images/logo.png",
         tag: ["All", "Web"],
         gitURL: "/",
         previewURL: "/"
@@ -45,7 +45,7 @@ const ProjectsData = [
         id: 5,
         title: "Project 5",
         description: "Project 5 description",
-        image: "/images/Screenshot_92.png",
+        image: "/images/logo.png",
         tag: ["All", "Web"],
         gitURL: "/",
         previewURL: "/"
@@ -54,7 +54,7 @@ const ProjectsData = [
         id: 6,
         title: "Project 6",
         description: "Project 6 description",
-        image: "/images/Screenshot_92.png",
+        image: "/images/logo.png",
         tag: ["All", "Web", "Mobile"],
         gitURL: "/",
         previewURL: "/"
@@ -78,7 +78,8 @@ const cardVariants = {
 };
 
   return (
-    <section ref={ref}>
+    <section ref={ref} id='projects'>
+        
         <h2 className='text-center text-4xl font-bold mt-4 mb-10'>My Projects</h2>
         <div className='flex flex-row justify-center items-center gap-2 py-6'>
            <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
