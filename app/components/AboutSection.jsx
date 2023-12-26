@@ -74,10 +74,10 @@ const AboutSection = () => {
           className="rounded-md md:mt-[-290px] lg:mt-[59px]"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold mb-10">About Me</h2>
+          <h2 className="text-4xl font-bold mb-10 underline">About Me</h2>
           <p className="text-base md:text-lg">
-            An enthusiastic and detail-oriented Junior Front-End Developer.
-            Looking for an entry-level position, such as trainee or junior.
+            An enthusiastic and detail-oriented Front-End Developer.
+            Looking for an entry-level position.
             Seeking to utilize my technical skills and expertise to provide
             value to the employer and contribute to successful projects both
             today and in the future. Aiming to take on new challenges and
