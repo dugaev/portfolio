@@ -7,39 +7,39 @@ import { motion, useInView } from 'framer-motion'
 const ProjectsData = [
     {
         id: 1,
-        title: "Project 1",
-        description: "Project 1 description",
-        image: "/images/logo.png",
+        title: "Weather App",
+        description: "Project that diplays you a weather in different cities. Made with HTML,CSS,JS and API connected from weather-provider site.",
+        image: "/images/projects/weatherBig.png",
         tag: ["All", "Web"],
         gitURL: "/",
-        previewURL: "/"
+        previewURL: "https://oleg-weather-forecast.netlify.app"
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "Project 2 description",
-        image: "/images/logo.png",
+        title: "GTA II Scene",
+        description: "This projects simulate an action scene from GTA II. Made with HTML,CSS,JS",
+        image: "/images/projects/gtaBig.png",
         tag: ["All", "Web"],
         gitURL: "/",
-        previewURL: "/"
+        previewURL: "https://gta2scene.netlify.app"
     },
     {
         id: 3,
-        title: "Project 3",
-        description: "Project 3 description",
-        image: "/images/logo.png",
+        title: "TODO App",
+        description: "Classic ToDo App made with ReactJS and SASS",
+        image: "/images/projects/todoBig.png",
         tag: ["All", "Web"],
         gitURL: "/",
-        previewURL: "/"
+        previewURL: "https://toodooappx.netlify.app"
     },
     {
         id: 4,
-        title: "Project 4",
-        description: "Project 4 description",
-        image: "/images/logo.png",
+        title: "Mirax Plaza",
+        description: "This project represents you site of a real estate in Kyiv. That was my first project and made with HTML,CSS,JS",
+        image: "/images/projects/miraxBig.png",
         tag: ["All", "Web"],
         gitURL: "/",
-        previewURL: "/"
+        previewURL: "https://mirax-plaza.netlify.app"
     },
     {
         id: 5,
