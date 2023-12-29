@@ -7,49 +7,50 @@ import { motion, useInView } from 'framer-motion'
 const ProjectsData = [
     {
         id: 1,
-        title: "Weather App",
-        description: "Project that diplays you a weather in different cities. Made with HTML,CSS,JS and API connected from weather-provider site.",
-        image: "/images/projects/weatherBig.png",
+        title: "TODO App",
+        description: "Classic ToDo App made with ReactJS and SASS",
+        image: "/images/projects/Todo.png",
         tag: ["All", "Web"],
-        gitURL: "/",
-        previewURL: "https://oleg-weather-forecast.netlify.app"
+        gitURL: "https://github.com/dugaev/todo-app",
+        previewURL: "https://toodooappx.netlify.app"
     },
     {
         id: 2,
-        title: "GTA II Scene",
-        description: "This projects simulate an action scene from GTA II. Made with HTML,CSS,JS",
-        image: "/images/projects/gtaBig.png",
+        title: "Currency Converter",
+        description: "Currency converter for different currencies. Made with ReactJS, MaterialUI, Vite.",
+        image: "/images/projects/currency.png",
         tag: ["All", "Web"],
-        gitURL: "/",
-        previewURL: "https://gta2scene.netlify.app"
+        gitURL: "https://github.com/dugaev/currency-converter",
+        previewURL: "https://currency-converterr.vercel.app"
     },
     {
         id: 3,
-        title: "TODO App",
-        description: "Classic ToDo App made with ReactJS and SASS",
-        image: "/images/projects/todoBig.png",
+        title: "GTA II Scene",
+        description: "This projects simulate an action scene from GTA II. Made with HTML,CSS,JS",
+        image: "/images/projects/gta.png",
         tag: ["All", "Web"],
-        gitURL: "/",
-        previewURL: "https://toodooappx.netlify.app"
+        gitURL: "https://github.com/dugaev/gta-scene",
+        previewURL: "https://gta2scene.netlify.app"
     },
     {
         id: 4,
         title: "Mirax Plaza",
         description: "This project represents you site of a real estate in Kyiv. That was my first project and made with HTML,CSS,JS",
-        image: "/images/projects/miraxBig.png",
+        image: "/images/projects/mirax.png",
         tag: ["All", "Web"],
-        gitURL: "/",
+        gitURL: "https://github.com/dugaev/mirax-plaza",
         previewURL: "https://mirax-plaza.netlify.app"
     },
     {
         id: 5,
-        title: "Project 5",
-        description: "Project 5 description",
-        image: "/images/logo.png",
+        title: "Weather App",
+        description: "Project that diplays you a weather in different cities. Made with HTML,CSS,JS and API connected from weather-provider site.",
+        image: "/images/projects/weather.png",
         tag: ["All", "Web"],
         gitURL: "/",
-        previewURL: "/"
+        previewURL: "https://oleg-weather-forecast.netlify.app"
     },
+   
     {
         id: 6,
         title: "Project 6",

@@ -40,7 +40,7 @@ const HeroSection = () => {
                 <div>
                     <Link href={"#email"} className='w-auto py-3 rounded-full px-10 ml-[15px] mr-4 bg-gradient-to-br from-orange-500 to-yellow-500 hover:from-yellow-500 hover:to-orange-500 hover:bg-slate-200 text-white hover:scale-125 transition'>Hire Me</Link>
                     <button  className='px-1 py-1 rounded-full w-auto bg-gradient-to-br from-orange-500  to-yellow-600 hover:bg-slate-800 text-white mt-4 hover:scale-105 transition'>
-                        <a href='/public/Oleg_Dugaev_-_Junior_Front_end_Developer-_3_.pdf' download='CV.pdf' className='block bg-[#121212] hover:bg-slate-800 rounded-full px-3 py-2'>Download CV</a>
+                        <a href='/Oleg_Dugaev_-_Junior_Front_end_Developer-_3_.pdf' download='CV.pdf' className='block bg-[#121212] hover:bg-slate-800 rounded-full px-3 py-2'>Download CV</a>
                     </button>
                 </div>
             </motion.div>
