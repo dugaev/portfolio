@@ -4,8 +4,8 @@ import Link from 'next/link'
 const ProjectCard = ( { imgURL, title, description, gitURL, previewURL }) => {
   return (
    <div >
-    <div className='h-52 md:h-72 rounded-t-xl relative group' 
-    style={{ background: `url(${imgURL})`, backgroundSize: 'cover'}}>
+    <div className='h-52 md:h-52 rounded-t-xl relative group' 
+    style={{ background: `url(${imgURL})`, backgroundSize: 'cover '}}>
       <div className='overlay items-center hidden justify-center absolute top-0 left-0 w-full h-full  bg-[#181818] bg-opacity-0  group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 cursor-pointer'>
         <Link href={gitURL} className='flex mr-2 justify-center items-center h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link'>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" dataSlot="icon" className="w-9 h-9">
