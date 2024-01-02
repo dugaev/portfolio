@@ -6,7 +6,7 @@ const ProjectCard = ( { imgURL, title, description, gitURL, previewURL }) => {
    <div >
     <div className='h-52 md:h-72 rounded-t-xl relative group' 
     style={{ background: `url(${imgURL})`, backgroundSize: 'cover'}}>
-      <div className='overlay items-center hidden justify-center absolute top-0 left-0 w-full h-[300px] bg-[#181818] bg-opacity-0  group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 cursor-pointer'>
+      <div className='overlay items-center hidden justify-center absolute top-0 left-0 w-full h-full  bg-[#181818] bg-opacity-0  group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 cursor-pointer'>
         <Link href={gitURL} className='flex mr-2 justify-center items-center h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link'>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" dataSlot="icon" className="w-9 h-9">
           <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
