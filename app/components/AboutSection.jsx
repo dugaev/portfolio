@@ -74,7 +74,7 @@ const AboutSection = () => {
           className="rounded-md md:mt-[-290px] lg:mt-[59px]"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold mb-10 underline text-[#ADB7BE]">About Me</h2>
+          <h2 className="text-4xl font-bold mb-10 underline text-white">About Me</h2>
           <p className="text-base md:text-lg text-[#ADB7BE]">
             An enthusiastic and detail-oriented Front-End Developer.
             Looking for an entry-level position.
