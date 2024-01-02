@@ -10,7 +10,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-[#ADB7BE]">
         <li>React</li>
         <li>TypeScript</li>
         <li>Redux</li>
@@ -27,8 +27,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul>
-        <li>Chernivtsi National University</li>
-        <li>Learn and Go English School</li>
+        <li className="text-[#ADB7BE]">Chernivtsi National University</li>
+        <li className="text-[#ADB7BE]">Learn and Go English School</li>
       </ul>
     ),
   },
@@ -37,15 +37,15 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul>
-        <li>
+        <li className="text-[#ADB7BE]">
           QA Engineer (Trainee) -{" "}
           <span className="font-bold underline">Datawiz</span>
         </li>
-        <li>
+        <li className="text-[#ADB7BE]">
           Sales Manager -{" "}
           <span className="font-bold underline">Ltd Citrus</span>
         </li>
-        <li>
+        <li className="text-[#ADB7BE]">
           Director Assistant -{" "}
           <span className="font-bold underline">Ltd ALLO</span>
         </li>
@@ -74,8 +74,8 @@ const AboutSection = () => {
           className="rounded-md md:mt-[-290px] lg:mt-[59px]"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold mb-10 underline">About Me</h2>
-          <p className="text-base md:text-lg">
+          <h2 className="text-4xl font-bold mb-10 underline text-[#ADB7BE]">About Me</h2>
+          <p className="text-base md:text-lg text-[#ADB7BE]">
             An enthusiastic and detail-oriented Front-End Developer.
             Looking for an entry-level position.
             Seeking to utilize my technical skills and expertise to provide
