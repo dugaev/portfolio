@@ -81,7 +81,7 @@ const cardVariants = {
   return (
     <section ref={ref} id='projects'>
         
-        <h2 className='text-center text-4xl font-bold mt-4 mb-10 underline'>My Projects</h2>
+        <h2 className='text-center text-white text-4xl font-bold mt-4 mb-10 underline'>My Projects</h2>
         <div className='flex flex-row justify-center items-center gap-2 py-6'>
            <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
            {/* <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />

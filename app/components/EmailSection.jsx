@@ -11,7 +11,7 @@ const EmailSection = () => {
     <section id='email' className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
         <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-900 to-transparent rounded-full md:h-60 md:w-60 lg:h-60 lg:w-60 z-0 blur-3xl absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
         <div className='z-10 flex flex-col gap-10'>
-            <h5 className='text-xl font-bold my-4 lg:text-[40px] text-[#ADB7BE] '>Let&apos;s Connect</h5>
+            <h5 className='text-xl font-bold my-4 lg:text-[40px] text-white '>Let&apos;s Connect</h5>
             <p className='text-[#ADB7BE] mb-4 max-w-md'>
                 I&apos;m currently looking for new opportunities, my inbox is always open. 
                 Whether you have a question or just want to say hi, 
