@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState, useTransition } from "react";
 import img from "../../public/images/aboutme.jpg";
 import TabButton from "./TabButton";
+import AboutMeHeading from "./SectionHeading";
 
 const TAB_DATA = [
   {
@@ -74,7 +75,8 @@ const AboutSection = () => {
           className="rounded-md md:mt-[-290px] lg:mt-[59px]"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold mb-10 underline text-white">About Me</h2>
+          {/* <h2 className="text-4xl font-bold mb-10 underline text-white">About Me</h2> */}
+          <AboutMeHeading />
           <p className="text-base md:text-lg text-[#ADB7BE]">
             An enthusiastic and detail-oriented Front-End Developer.
             Looking for an entry-level position.
