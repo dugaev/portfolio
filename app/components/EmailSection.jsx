@@ -59,7 +59,7 @@ const EmailSection = () => {
                     <label htmlFor="message" className='block text-sm mb-2 font-medium'>Message</label>
                     <textarea name="message" id="message" className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' placeholder="Let's talk about..."></textarea>
                </div >
-               {/* <button type='submit' className='bg-orange-500 hover:bg-orange-600 fomt-medium py-2.5 px-5 rounded-lg w-full'>Send Message </button> */}
+               {/* <button type='submit' className='bg-orange-500 hover:bg-orange-600 font-medium py-2.5 px-5 rounded-lg w-full'>Send Message </button> */}
     
                 <SendButton />
 
