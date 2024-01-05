@@ -16,17 +16,18 @@ const ProjectsData = [
     },
     {
         id: 2,
-        title: "GTA II Scene",
-        description: "This projects simulate an action scene from GTA II. Made with HTML,CSS,JS",
-        image: "/images/projects/gta2.png",
+        title: "Weather Forecast",
+        description: "Weather forecast made with Vue.JS and SASS ",
+        image: "/images/projects/forecast.png",
         tag: ["All", "Web"],
-        gitURL: "https://github.com/dugaev/gta-scene",
-        previewURL: "https://gta2scene.netlify.app"
+        gitURL: "https://github.com/dugaev/vuejs-meteo",
+        previewURL: "https://od-meteo.vercel.app/"
     },
+    
     {
         id: 3,
         title: "Currency Converter",
-        description: "Currency converter for different currencies. Made with ReactJS, MaterialUI, Vite.",
+        description: "Сonverter made with ReactJS, MaterialUI, Vite.",
         image: "/images/projects/currency2.png",
         tag: ["All", "Web"],
         gitURL: "https://github.com/dugaev/currency-converter",
@@ -35,7 +36,7 @@ const ProjectsData = [
     {
         id: 4,
         title: "Mirax Plaza",
-        description: "This project represents you site of a real estate in Kyiv. That was my first project and made with HTML,CSS,JS",
+        description: "This project represents you site of a real estate in Kyiv.Made with HTML,CSS,JS",
         image: "/images/projects/mirax2.png",
         tag: ["All", "Web"],
         gitURL: "https://github.com/dugaev/mirax-plaza",
@@ -44,22 +45,21 @@ const ProjectsData = [
     {
         id: 5,
         title: "Weather App",
-        description: "Project that diplays you a weather in different cities. Made with HTML,CSS,JS and API connected from weather-provider site.",
+        description: "Project that diplays you a weather in different cities. Made with HTML,CSS,JS",
         image: "/images/projects/weather2.png",
         tag: ["All", "Web"],
         gitURL: "/",
         previewURL: "https://oleg-weather-forecast.netlify.app"
     },
-   
     {
         id: 6,
-        title: "Project 6",
-        description: "Project 6 description",
-        image: "/images/logo.png",
-        tag: ["All", "Web", "Mobile"],
-        gitURL: "/",
-        previewURL: "/"
-    }
+        title: "GTA II Scene",
+        description: "This projects simulate an action scene from GTA II. Made with HTML,CSS,JS",
+        image: "/images/projects/gta2.png",
+        tag: ["All", "Web"],
+        gitURL: "https://github.com/dugaev/gta-scene",
+        previewURL: "https://gta2scene.netlify.app"
+    },
 ]
 const ProjectsSection = () => {
     const [tag, setTag] = useState("All");
@@ -81,7 +81,7 @@ const cardVariants = {
   return (
     <section ref={ref} id='projects'>
         
-        <h2 className='text-center text-white text-4xl font-bold mt-4 mb-10 underline'>My Projects</h2>
+        <h2 className='text-center text-white text-4xl font-bold mt-4 mb-10'>My Projects</h2>
         <div className='flex flex-row justify-center items-center gap-2 py-6'>
            <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
            {/* <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
