@@ -5,22 +5,24 @@ import React, { useState, useTransition } from "react";
 import img from "../../public/images/aboutme.jpg";
 import TabButton from "./TabButton";
 import AboutMeHeading from "./SectionHeading";
+import LogoSlider from "./Logoslider";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2 text-[#ADB7BE]">
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>Redux</li>
-        <li>Next.js</li>
-        <li>TailwindCSS</li>
-        <li>Styled Components</li>
-        <li>SCSS/SASS</li>
-        <li>PostgreSQL</li>
-      </ul>
+      // <ul className="list-disc pl-2 text-[#ADB7BE]">
+      //   <li>React</li>
+      //   <li>TypeScript</li>
+      //   <li>Redux</li>
+      //   <li>Next.js</li>
+      //   <li>TailwindCSS</li>
+      //   <li>Styled Components</li>
+      //   <li>SCSS/SASS</li>
+      //   <li>PostgreSQL</li>
+      // </ul>
+      <LogoSlider />
     ),
   },
   {
@@ -72,21 +74,19 @@ const AboutSection = () => {
           alt="about-img"
           width={500}
           height={500}
-          className="rounded-md md:mt-[-290px] lg:mt-[59px]"
+          className="rounded-md hidden md:block md:h-[530px] md:mt-[100px] lg:block lg:mt-[59px]"
         />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          {/* <h2 className="text-4xl font-bold mb-10 underline text-white">About Me</h2> */}
+        <div className="mt-4 md:mt-[50px] text-left flex flex-col h-full">
           <AboutMeHeading />
-          <p className="text-base md:text-lg text-[#ADB7BE]">
-            An enthusiastic and detail-oriented Front-End Developer.
-            Looking for an entry-level position.
-            Seeking to utilize my technical skills and expertise to provide
-            value to the employer and contribute to successful projects both
-            today and in the future. Aiming to take on new challenges and
-            utilize my coding and debugging skills for developing new features
-            and enhance the overall user experience. Every day I improve my
-            knowledge by studying new technologies, frameworks and improving my
-            skills in those already studied.
+          <p className="text-start md:text-sm md:mt-3 text-[#ADB7BE]">
+            An enthusiastic and detail-oriented Front-End Developer. Looking for
+            an entry-level position. Seeking to utilize my technical skills and
+            expertise to provide value to the employer and contribute to
+            successful projects both today and in the future. Aiming to take on
+            new challenges and utilize my coding and debugging skills for
+            developing new features and enhance the overall user experience.
+            Every day I improve my knowledge by studying new technologies,
+            frameworks and improving my skills in those already studied.
           </p>
           <div className="flex flex-row mt-[70px]">
             <TabButton
@@ -112,7 +112,7 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-        <div className="hidden md:block bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-900 to-transparent rounded-full md:h-60 md:w-60 lg:h-80 lg:w-80 z-0 blur-3xl absolute top-[1200px] -right-[120px] transform -translate-x-1/2 -translate-1/2"></div>
+        <div className="hidden md:block bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-900 to-transparent rounded-full md:h-60 md:w-60 lg:h-80 lg:w-80 z-0 blur-3xl absolute top-[1300px] -right-[120px] transform -translate-x-1/2 -translate-1/2"></div>
       </div>
     </section>
   );
