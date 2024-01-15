@@ -35,7 +35,7 @@ const HeroSection = () => {
             myself and I&apos;m goal oriented. Also, I love learning and
             creating new processes for construction.
           </p>
-          <div>
+          <div className="mb-[50px]">
             <Link
               href={"#email"}
               className="w-auto py-3 rounded-full px-10 ml-[15px] mr-4 bg-gradient-to-br from-orange-500 to-yellow-500 hover:from-yellow-500 hover:to-orange-500 hover:bg-slate-200 text-white hover:scale-125 transition"

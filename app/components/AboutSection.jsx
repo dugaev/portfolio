@@ -74,7 +74,7 @@ const AboutSection = () => {
           alt="about-img"
           width={500}
           height={500}
-          className="rounded-md hidden md:block md:h-[530px] md:mt-[100px] lg:block lg:mt-[59px]"
+          className="rounded-md hidden md:block md:h-[610px] md:mt-[100px] lg:block lg:mt-[59px]"
         />
         <div className="mt-4 md:mt-[50px] text-left flex flex-col h-full">
           <AboutMeHeading />
