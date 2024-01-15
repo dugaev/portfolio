@@ -7,13 +7,18 @@ import Link from "next/link";
 import Image from "next/image";
 import SendButton from "./SendButton";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const EmailSection = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
+  const notifySuccess = () => toast.success("Email sent successfully!");
+  const notifyError = () =>
+    toast.error("Error sending email. Please try again.");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const serviceId = "service_oy776uv";
@@ -27,17 +32,23 @@ const EmailSection = () => {
       message: message,
     };
 
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("Email sent successfully", response);
-        setName("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch((error) => {
-        console.log("Error sending email: ", error);
-      });
+    try {
+      const response = await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams,
+        publicKey
+      );
+      console.log("Email sent successfully", response);
+      setName("");
+      setEmail("");
+      setMessage("");
+      notifySuccess();
+    } catch (error) {
+      console.log("Error sending email: ", error);
+      notifyError();
+    }
+    <ToastContainer />;
   };
   return (
     <section
@@ -82,24 +93,6 @@ const EmailSection = () => {
         <form onSubmit={handleSubmit} className="flex flex-col mt-9 md:mt-0">
           <div className="mb-6">
             <label
-              htmlFor="email"
-              type="email"
-              className="block text-sm mb-2 font-medium"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            >
-              Your E-Mail :
-            </label>
-            <input
-              type="email"
-              id="email"
-              required
-              placeholder="email@example.com"
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-            />
-          </div>
-          <div className="mb-6">
-            <label
               htmlFor="subject"
               type="email"
               className="block mb-2 text-sm font-medium"
@@ -116,6 +109,26 @@ const EmailSection = () => {
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             />
           </div>
+
+          <div className="mb-6">
+            <label
+              htmlFor="email"
+              type="email"
+              className="block text-sm mb-2 font-medium"
+            >
+              Your E-Mail :
+            </label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="email@example.com"
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
           <div className="mb-6">
             <label htmlFor="message" className="block text-sm mb-2 font-medium">
               Message
