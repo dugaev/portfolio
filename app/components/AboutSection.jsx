@@ -78,7 +78,7 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-[50px] text-left flex flex-col h-full">
           <AboutMeHeading />
-          <p className="text-start md:text-sm md:mt-3 text-[#ADB7BE]">
+          <p className="text-start md:text-sm lg:text-lg md:mt-3 text-[#ADB7BE]">
             An enthusiastic and detail-oriented Front-End Developer. Looking for
             an entry-level position. Seeking to utilize my technical skills and
             expertise to provide value to the employer and contribute to
