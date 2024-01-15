@@ -44,7 +44,7 @@ const HeroSection = () => {
             </Link>
             <button className="px-1 py-1 rounded-full w-auto bg-gradient-to-br from-orange-500  to-yellow-600 hover:bg-slate-800 text-white mt-4 hover:scale-105 transition">
               <a
-                href="/Oleg_Dugaev_-_Junior_Front_end_Developer-_3_.pdf"
+                href="/Oleg Dugaev.pdf"
                 download="CV.pdf"
                 className="block bg-[#121212] hover:bg-slate-800 rounded-full px-3 py-2"
               >
